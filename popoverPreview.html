@@ -1,0 +1,12 @@
+
+<template>
+    <div class="slds-box slds-theme_shade">
+        <div>
+            <span class="slds-is-absolute" onmouseover={show}  onmouseout={handleClose}>
+                <lightning-button label="test button" disabled="true"></lightning-button>
+               <c-popover  style="position:absolute;bottom:0.5rem;left:5rem;border:1px" show={showPopver} onclose={handleClose} body="test hover over message" size="small" variant="error" ></c-popover>
+            </span>
+        
+        </div>
+    </div>
+</template>
